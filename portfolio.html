@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>olcaytapan - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body-class">
+    <nav class="flex justify-between items-center">
+        <ul>
+            <li>
+                <h1 class="text-white text-xl hidden sm:block ml-2">Welcome to My Portfolio</h1>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <!-- Light Mode Toggle Button -->
+                <button id="lightModeToggle" class="active-mode border border-gray-300 rounded mr-2">Light Mode</button>
+                <!-- Dark Mode Toggle Button -->
+                <button id="darkModeToggle" class=" border border-gray-300 rounded">Dark Mode</button>
+            </li>
+        </ul>
+        <ul class="flex space-x-4">
+            <li><a href="#about" class="text-white text-xl hidden sm:block">About</a></li>
+            <li><a href="#projects" class="text-white text-xl">Projects</a></li>
+            <li><a href="#contact" class="text-white text-xl">Contact</a></li>
+            <li><a href="./assets/OLCAY_TAPAN_Software_Developer_CV.pdf" class="text-white mr-2 text-xl" target="_blank">Resume</a></li>
+        </ul>
+    </nav>
+    
+
+<div class="container flex justify-center items-center mx-auto max-w-screen-xl">
+    <header class="text-center">
+        <img src="./assets/profile.jpg" alt="Your Name" class="rounded-full w-56 h-auto ml-4">
+    </header>
+    <section id="about" class="p-8">
+        <h1 class="text-3xl font-bold mb-4">About Me</h1>
+        <ul class="text-left bg-gray-100 rounded-lg">
+            <li>I have recently completed the Acumant internship program and am now attending the Lexicon System Developer Education program.</li>
+            <li>I have also recently completed Technigo Javascript & React Bootcamp</li>
+            <li>I completed the Ahmet Yesevi University Computer Engineering bachelor's degree in 2023.</li>
+            <li>Previously, I studied English at Anadolu University for 1 year and completed my Civil Engineering bachelor's degree entirely in English in 2016.</li>
+            <li>Apart from coding, there are many other activities that I love to do!</li>
+            <li><strong>What are my Hobbies?</strong></li>
+            <li>Walking in the Nature</li>
+            <li>Playing Board Games with Friends</li>
+            <li>Travelling</li>
+        </ul>
+    </section>
+</div>
+
+<button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">Top</button>
+
+<section id="projects" class="mt-8">
+    <h2 class="text-3xl font-bold mb-4">Projects</h2>
+    <div class="flex flex-wrap justify-center gap-5">
+        <div class="project flex flex-col items-center">
+            <h3 class="text-lg font-semibold mb-2">Expence Tracker React App</h3>
+            <img src="./assets/final.png" alt="Project 1" class="w-64 h-80 object-cover">
+            <p class="text-gray-700 max-w-xs">Users can easily log their expenses, categorize transactions, and gain valuable insights into their spending patterns, making ExpensifyTracker an essential tool for personal financial management.</p>
+            <div class="mt-auto flex justify-center mb-4">
+                <a href="https://technigo-final-week-project.netlify.app/" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full  mb-2 mr-2">Demo</a>
+                <a href="https://github.com/Olcaytp/technigo-final-project" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4  mb-2 mr-2 rounded-full">Code</a>
+            </div>
+        </div>
+    
+        <div class="project flex flex-col items-center">
+            <h3 class="text-lg font-semibold mb-2">Weather App</h3>
+            <img src="./assets/weather.png" alt="Project 1" class="w-64 h-80 object-cover">
+            <p class="text-gray-700 max-w-xs">Weather App is a web app that allows users to search for weather information. The app was built using React and the API was built using Express and MongoDB.</p>
+            <div class="mt-auto flex flex-wrap justify-center mb-4">
+                <a href="https://weather-app-ayumi-olcay.netlify.app/" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full mb-2 mr-2">Demo</a>
+                <a href="https://github.com/Olcaytp/PairProject-WeatherApp-Technigo-Week3" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4  mb-2 mr-2 rounded-full">Code</a>
+            </div>            
+        </div>
+    
+        <div class="project flex flex-col items-center">
+            <h3 class="text-lg font-semibold mb-2">Todo App</h3>
+            <img src="./assets/todo.png" alt="Project 1" class="w-64 h-80 object-cover">
+            <p class="text-gray-700 max-w-xs">With the power of React components and state management, users can efficiently create, update, and mark tasks as completed, making it an essential tool for anyone seeking an efficient and user-friendly task management solution.</p>
+            <div class="mt-auto flex justify-center mb-4">
+                <a href="https://technigo-project-redux.netlify.app/" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full  mb-2 mr-2">Demo</a>
+                <a href="https://github.com/Olcaytp/technigo-week9-project-todos-redux" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4  mb-2 mr-2 rounded-full">Code</a>
+            </div>
+        </div>
+        
+        <div class="project flex flex-col items-center">
+            <h3 class="text-lg font-semibold mb-2">Quiz App</h3>
+            <img src="./assets/quiz.png" alt="Project 1" class="w-64 h-80 object-cover">
+            <p class="text-gray-700 max-w-xs">QuizzyReact is an engaging and interactive web application developed using React, aimed at providing users with an enjoyable quiz-taking experience. This app is designed to be both user-friendly and visually appealing, offering a wide range of quizzes on diverse topics.</p>
+            <div class="mt-auto flex justify-center mb-4">
+                <a href="https://technigo-react-redux-quizz-app.netlify.app/" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full  mb-2 mr-2">Demo</a>
+                <a href="https://github.com/Olcaytp/Technigo-week8-project-redux-quiz#" target="_blank" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4  mb-2 mr-2 rounded-full">Code</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+        <div class="contact-list">
+            <ul>
+                <li><a href="https://github.com/Olcaytp" target="_blank">GitHub</a></li>
+                <li><a href="http://www.linkedin.com/in/olcaytapan" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="contact-list">
+            <ul>
+                <li><a href="https://olcaytapan-portfolio.netlify.app/" target="_blank">Portfolio</a></li>
+                <li><a href="mailto:olcaytapan10@gmail.com" target="_blank">Email</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>    
+<script src="script.js"></script>
+</body>
+</html>

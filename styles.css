@@ -1,0 +1,202 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sections Stylings */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header img {
+    border-radius: 15%;
+    width: 200px;
+    height: 250px;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.project {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Scroll Button Styling */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background-color: #333; 
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: none; /* At the begining it doen't appear */
+}
+
+#scrollTopBtn:hover {
+    background-color: #555; /* If mouse come to the button change the color */
+}
+
+/* About Styling */
+.container {
+    display: flex;
+    flex-direction: row; /* Dikey yönde hizalama */
+    align-items: center; /* Öğeleri ortalamak için */
+    justify-content: center; /* Öğeleri dikeyde ortalamak için */
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 20px; /* Header ile section arasına boşluk bırak */
+}
+#about {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#about ul {
+    background-color: #f2f2f2;
+    list-style-type: none; /* List style type */
+    padding-left: 20px;
+    color: black;
+}
+#about ul li {
+    padding: 5px;
+}
+#about h1 {
+    font-size: 30px;
+}
+#about li {
+    margin-bottom: 10px;
+}
+/* Contact Styles */
+#contact {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+.contact-list {
+    width: 15%; /* İki div'i yanyana yerleştirmek için */
+}
+.contact-list h3 {
+    margin-bottom: 10px;
+}
+.contact-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.contact-list li {
+    margin-bottom: 10px;
+}
+.contact-list a {
+    text-decoration: none;
+    color: #333;
+}
+.contact-list a:hover {
+    text-decoration: underline;
+}
+/* hoover for projects */
+.project:hover img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+/* color change with hover effecct for projects navs */
+nav a:hover {
+    color: #FFD700; /* Altın rengi */
+    transition: color 0.3s ease;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    #about {
+        padding: 10px;
+    }
+}
+@media (max-width: 639.49px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header img {
+        display: none;
+    }
+    #projects .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+  }
+/* Styles for active mode */
+.active-mode {
+    background-color: #bf0000; /* Dark mode button background color */
+    color: #fdfdfd; /* Dark mode button text color */
+}
+
+/* Light mode button styles */
+#lightModeToggle {
+    color: #ffffff; /* Light mode button text color */
+}
+
+/* Dark mode button styles */
+#darkModeToggle {
+    color: #ffffff; /* Dark mode button text color */
+}
+
+/* Dark mode styles */
+[data-theme='dark'] {
+    /* Update background color, text color, and other styles for dark mode */
+    background-color: #f06363; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+    /* Add any additional styles for dark mode */
+}
