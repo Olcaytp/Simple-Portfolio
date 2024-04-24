@@ -14,10 +14,10 @@ Here, you'll find a collection of projects that I've worked on. Each project inc
 
 If you'd like to get in touch with me, feel free to reach out using any of the following methods:
 
-- Email: [Your Email Address](mailto:olcaytapan10@gmail.com)
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/olcaytapan)
-- GitHub: [Your GitHub Profile](https://github.com/Olcaytp)
-- Portfolio: [Your Portfolio Website](https://olcaytapan-portfolio.netlify.app/)
+- Email: [ Email Me](mailto:olcaytapan10@gmail.com)
+- LinkedIn: [ LinkedIn To My Profile](https://www.linkedin.com/in/olcaytapan)
+- GitHub: [ GitHub To My Profile](https://github.com/Olcaytp)
+- Portfolio: [ My Portfolio Website](https://olcaytapan-portfolio.netlify.app/)
 
 ## Light/Dark Mode Toggle
 
