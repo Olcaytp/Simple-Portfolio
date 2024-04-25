@@ -9,12 +9,16 @@ body {
     margin: 0;
     padding: 0;
 }
-
 nav {
-    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Arka plan rengi */
     color: #fff;
     padding: 10px 0;
 }
+
 
 nav ul {
     list-style-type: none;
@@ -38,8 +42,13 @@ section {
 }
 
 .project {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin: 0 20px;
+    border: 1px solid #010101;
+}
+.project p {
+    color: unset;
 }
 
 footer {
@@ -75,6 +84,7 @@ footer {
     flex-direction: row; /* Dikey yönde hizalama */
     align-items: center; /* Öğeleri ortalamak için */
     justify-content: center; /* Öğeleri dikeyde ortalamak için */
+    margin-top: 80px;
 }
 header {
     display: flex;
@@ -169,6 +179,7 @@ nav a:hover {
         flex-direction: column;
         align-items: center !important;
         justify-content: center !important;
+        margin-top: 80px;
     }
     .contact-info {
         display: flex;
@@ -196,7 +207,7 @@ nav a:hover {
 /* Dark mode styles */
 [data-theme='dark'] {
     /* Update background color, text color, and other styles for dark mode */
-    background-color: #f06363; /* Dark mode background color */
+    background-color: #080808; /* Dark mode background color */
     color: #fff; /* Dark mode text color */
     /* Add any additional styles for dark mode */
 }
