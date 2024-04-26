@@ -11,6 +11,9 @@ body {
 }
 nav {
     position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
     left: 0;
     width: 100%;
@@ -44,7 +47,7 @@ section {
 .project {
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 20px 20px;
     border: 1px solid #010101;
 }
 .project p {
@@ -92,12 +95,13 @@ header {
     align-items: center;
     justify-content:center;
     margin-bottom: 20px; /* Header ile section arasına boşluk bırak */
+    margin-top: 80px;
 }
 #about {
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-top: 30px;
+    margin-top: 80px;
 }
 
 #about ul {
@@ -164,9 +168,10 @@ nav a:hover {
         padding: 10px;
     }
 }
-@media (max-width: 639.49px) {
+@media (max-width: 849.49px) {
     nav {
         display: flex;
+        justify-self: center;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -174,12 +179,11 @@ nav a:hover {
     header img {
         display: none;
     }
-    #projects .flex {
+    .project {
         display: flex;
         flex-direction: column;
-        align-items: center !important;
-        justify-content: center !important;
-        margin-top: 80px;
+        border: 1px solid #010101;
+        margin-bottom: 25px;
     }
     .contact-info {
         display: flex;
@@ -188,22 +192,25 @@ nav a:hover {
         justify-content: center;
     }
   }
+  @media (max-width: 1088.49px) {
+    .moddle {
+        display: flex;
+        align-items: center;
+    }}
+
 /* Styles for active mode */
 .active-mode {
     background-color: #bf0000; /* Dark mode button background color */
     color: #fdfdfd; /* Dark mode button text color */
 }
-
 /* Light mode button styles */
 #lightModeToggle {
     color: #ffffff; /* Light mode button text color */
 }
-
 /* Dark mode button styles */
 #darkModeToggle {
     color: #ffffff; /* Dark mode button text color */
 }
-
 /* Dark mode styles */
 [data-theme='dark'] {
     /* Update background color, text color, and other styles for dark mode */
